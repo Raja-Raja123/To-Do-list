@@ -37,5 +37,7 @@ function saveData(){
 
 function showData(){
     listContainer.innerHTML=localStorage.getItem('data');
+    let checked=document.querySelectorAll(".checked")
+    checked.forEach(item => item.remove())
 }
 showData();
